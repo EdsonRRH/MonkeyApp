@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class SignPage extends StatelessWidget{
-  const SignPage({Key? key}): super(key: key);
+class LogPage extends StatelessWidget{
+  const LogPage({Key? key}): super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,23 +23,23 @@ class SignPage extends StatelessWidget{
                     child:Wrap(
                       alignment: WrapAlignment.center,
                       children: const<Widget>[
-                      Text('Sign Up ',
+                      Text('Login ',
                         style: TextStyle(color: Color.fromRGBO(124, 125, 126, 1.0),
                         fontSize: 30.0),
                         ),
                     ],
                   )
                   ),
-                  const SizedBox(height: 25.0,),
+                  const SizedBox(height: 30.0,),
                   Wrap(
                     alignment: WrapAlignment.center,
                     children: const<Widget>[
-                      Text('Add your details to sign up',
+                      Text('Add your details to login',
                       style: TextStyle(color: Color.fromRGBO(124, 125, 126, 1.0)),
                     )
                   ],
                   ),
-                  const SizedBox(height: 25.0,),
+                  const SizedBox(height: 30.0,),
                   Container(
                     width: double.infinity,
                     height: 55.0,
@@ -53,77 +53,14 @@ class SignPage extends StatelessWidget{
                         keyboardType: TextInputType.text,  
                         decoration: const InputDecoration( 
                           border: InputBorder.none, 
-                            labelText: '          Name',
+                            labelText: '          Your Email',
                             labelStyle: TextStyle(
                               color:  Color.fromRGBO(182, 183, 183, 1.0)
-                            )  
+                            )
                         ),
                     ),
                   ),
-                  const SizedBox(height: 25.0,),
-                  Container(
-                    width: double.infinity,
-                    height: 55.0,
-                    margin: const EdgeInsets.only(left: 40.0, right:40.0 ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromRGBO(242, 242, 242, 1.0)
-                    ),
-                    child:TextFormField(
-                      obscureText: true,
-                        keyboardType: TextInputType.text,  
-                        decoration: const InputDecoration( 
-                          border: InputBorder.none, 
-                            labelText: '          Email',
-                            labelStyle: TextStyle(
-                              color:  Color.fromRGBO(182, 183, 183, 1.0)
-                            )  
-                        ),
-                    ),
-                  ),
-                  const SizedBox(height: 25.0,),
-                  Container(
-                    width: double.infinity,
-                    height: 55.0,
-                    margin: const EdgeInsets.only(left: 40.0, right:40.0 ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromRGBO(242, 242, 242, 1.0)
-                    ),
-                    child:TextFormField(
-                      obscureText: true,
-                        keyboardType: TextInputType.text,  
-                        decoration: const InputDecoration( 
-                          border: InputBorder.none, 
-                            labelText: '          Mobile No',
-                            labelStyle: TextStyle(
-                              color:  Color.fromRGBO(182, 183, 183, 1.0)
-                            )  
-                        ),
-                    ),
-                  ),
-                  const SizedBox(height: 25.0,),
-                  Container(
-                    width: double.infinity,
-                    height: 55.0,
-                    margin: const EdgeInsets.only(left: 40.0, right:40.0 ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromRGBO(242, 242, 242, 1.0)
-                    ),
-                    child:TextFormField(
-                      obscureText: true,
-                        keyboardType: TextInputType.text,  
-                        decoration: const InputDecoration( 
-                          border: InputBorder.none, 
-                            labelText: '          Address',
-                            labelStyle: TextStyle(
-                              color:  Color.fromRGBO(182, 183, 183, 1.0)
-                            )  
-                        ),
-                    ),
-                  ),
-                  const SizedBox(height: 25.0,),
+                  const SizedBox(height: 30.0,),
                   Container(
                     width: double.infinity,
                     height: 55.0,
@@ -144,28 +81,9 @@ class SignPage extends StatelessWidget{
                         ),
                     ),
                   ),
-                  const SizedBox(height: 25.0,),
-                  Container(
-                    width: double.infinity,
-                    height: 55.0,
-                    margin: const EdgeInsets.only(left: 40.0, right:40.0 ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: const Color.fromRGBO(242, 242, 242, 1.0)
-                    ),
-                    child:TextFormField(
-                      obscureText: true,
-                        keyboardType: TextInputType.text,  
-                        decoration: const InputDecoration( 
-                          border: InputBorder.none, 
-                            labelText: '          Confirm Password',
-                            labelStyle: TextStyle(
-                              color:  Color.fromRGBO(182, 183, 183, 1.0)
-                            )  
-                        ),
-                    ),
-                  ),
-                  const SizedBox(height: 25.0,),
+
+                  
+                  const SizedBox(height: 30.0,),
                   Container(
                     width: double.infinity,
                     height: 55.0,
@@ -176,7 +94,7 @@ class SignPage extends StatelessWidget{
                     ),
                     child:const TextButton(
                       onPressed: null,
-                      child: Text('Sign Up',
+                      child: Text('Login',
                         style: TextStyle(
                            fontSize: 18,
                             color: Colors.white,
@@ -185,14 +103,73 @@ class SignPage extends StatelessWidget{
                       ),
                     ),
                   ),
-                  const SizedBox(height: 25.0,),
+                   const SizedBox(height: 30.0,),
                   Wrap(
                     alignment: WrapAlignment.center,
                     children: const<Widget>[
-                      Text("Already have an Account?",
+                      Text('Forgot your password?',
+                      style: TextStyle(color: Color.fromRGBO(124, 125, 126, 1.0)),
+                    )
+                  ],
+                  ),
+                  const SizedBox(height: 50.0,),
+                  Wrap(
+                    alignment: WrapAlignment.center,
+                    children: const<Widget>[
+                      Text('or Login With',
+                      style: TextStyle(color: Color.fromRGBO(124, 125, 126, 1.0)),
+                    )
+                  ],
+                  ),
+                  const SizedBox(height: 30.0,),
+                  Container(
+                    width: double.infinity,
+                    height: 55.0,
+                    margin: const EdgeInsets.only(left: 40.0, right:40.0 ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: const Color.fromRGBO(54, 127, 192, 1.0)
+                    ),
+                    child: TextButton.icon(
+                      icon: const Icon(Icons.facebook,color: Colors.white,), 
+                      onPressed: null, 
+                      label: const Text('Login with Facebook',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                        ),
+                    )
+                    ),
+                  ),
+
+                  const SizedBox(height: 30.0,),
+                  Container(
+                    width: double.infinity,
+                    height: 55.0,
+                    margin: const EdgeInsets.only(left: 40.0, right:40.0 ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: const Color.fromRGBO(221, 75, 57, 1.0)
+                    ),
+                    child: TextButton.icon(
+                      icon: const Icon(Icons.mail, color: Colors.white,), 
+                      onPressed: null, 
+                      label: const Text('Login with Google',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                        ),
+                    )
+                    ),
+                  ),
+                  const SizedBox(height: 30.0,),
+                  Wrap(
+                    alignment: WrapAlignment.center,
+                    children: const<Widget>[
+                      Text("Don't have an Account?",
                       style: TextStyle(color: Color.fromRGBO(124, 125, 126, 1.0)),
                     ),
-                    Text(' Login',
+                    Text(' Sign Up',
                       style: TextStyle(color:  Color.fromRGBO(252, 96, 17, 1.0)),
                     )  
                   ],

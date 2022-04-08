@@ -72,6 +72,7 @@ flutter:
     - lib/src/img/Slider_indicators2.png
     - lib/src/img/Slider_indicators3.png
 
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -84,9 +85,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: Cabin
-       fonts:
-         - asset: lib/src/fonts/Cabin-Bold.ttf
+    - family: Cabin
+      fonts:
+        - asset: lib/src/fonts/Cabin-Bold.ttf
+
+  #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
